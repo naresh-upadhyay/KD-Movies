@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.naresh.kdmovies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".activites.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activites.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activites.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activites.MovieDetailActivity"
+            android:label="@string/title_activity_movie_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.DetailScreen" />
+        <activity
+            android:name=".activites.PersonDetailActivity"
+            android:label="@string/title_activity_cast_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.DetailScreen" />
+        <activity
+            android:name=".activites.ViewAllMoviesActivity"
+            android:label="@string/title_activity_view_all_movies"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activites.ViewAllTVShowsActivity"
+            android:label="@string/title_activity_view_all_tvshows"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activites.TVShowDetailActivity"
+            android:label="@string/title_activity_tvshow_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.DetailScreen" />
+        <activity
+            android:name=".activites.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activites.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>
